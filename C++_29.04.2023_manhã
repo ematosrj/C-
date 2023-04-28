@@ -1,0 +1,94 @@
+#include<iostream>
+#include<vector>
+#include<string>
+
+using namspace std;
+struct pessoa {
+int id;
+string nome;
+};
+
+int main() {
+vector <pessoa> v;
+pessoa eu;
+
+for(int i=0; i<100; i++) {
+cin >> eu.id >> eu.nome;
+v.push_back(eu);
+}
+
+for(int i=0; i<100; i++)
+cout <<v[i].id << "" <<v[i].nome <<endl;
+
+VECTOR E STRUCT
+
+using namspace std;
+struct pessoa {
+int id;
+string nome;
+};
+
+int main() {
+vector <pessoa> v;
+pessoa eu;
+
+for(int i=0; i<100; i++) {
+cin >> eu.id >> eu.nome;
+v.push_back(eu);
+}
+
+for(int i=0; i<100; i++)
+cout <<v[i].id << "" <<v[i].nome <<endl;
+
+-------------------------------------------
+
+struct carro {
+float t;
+int id;
+
+carros[0].t = 10.7;
+carros[0].id = 5;
+
+*aux1 ->t = 0
+
+vector < carro > carros(10);
+carro aux, *aux1;
+cin >> aux.t >> aux.id;
+carros.push_back(aux);
+
+-----------------------------------------------
+
+PARES DE DADOS
+
+#utility
+using namespace pair -> std
+
+int main() { pair<string,double>p;
+
+pair>tipos dos dados do par
+p.first = "pi"; acessa a primeira parte do par
+p.second = 3.14159; acessa a segunda parta do pair.
+
+----------------------------------------------------
+
+// make_pair example
+#include <utility>      // std::pair
+#include <iostream>     // std::cout
+
+int main () {
+  std::pair <int,int> foo;
+  std::pair <int,int> bar;
+
+  foo = std::make_pair (10,20);
+  bar = std::make_pair (10.5,'A'); // ok: implicit conversion from pair<double,char>
+
+  std::cout << "foo: " << foo.first << ", " << foo.second << '\n';
+  std::cout << "bar: " << bar.first << ", " << bar.second << '\n';
+
+  return 0;
+  
+  ------------------------------------------------------
+  Usando uma estrutura (STRUCT)
+
+  
+  
